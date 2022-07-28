@@ -1,9 +1,9 @@
 # The Landing Page Project
 
 ## Project description:
-```
+
 This project explain how we can manipulate The DOM using JavaScript, and how we can build a navigation bar which enable us to scroll into the contents of the page smoothly.
-```
+
 
 ---
 
