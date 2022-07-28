@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+      <!-- Here we will add the <li> items with javascript code, and This will create the nav bar. -->
+    </nav>
+
+    
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Internet</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Introduction" class="your-active-class">
+      <div class="landing__container">
+        <h2>Introduction</h2>
+        <p>The Internet is a global system of interconnected computer networks that use the standard Internet protocol suite to serve billions of users world wide.</p>
+
+        <p>It is a network of networks that consists of millions of private, public , academic , business , of local to global scope.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Subtitle">
+      <div class="landing__container">
+        <h2>Facebook</h2>
+        <p>
+          Taking Facebook <em>for Example:</em>
+          Facebook is a social net working service and website.
+        </p>
+        <p>
+          Facebook was founded in February 4, 2004 by Mark Zuckerberg with help from his fellow Harvard College students in Menlo Park, California. The website’s membership was initially limited to Harvard students but later gradually expanded to various other universities and eventually became accessible to the whole world. Since 2006, anyone above the age of 13 can be allowed to register on Facebook depending on local laws.
+        </p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Pros and Cons">
+      <div class="landing__container">
+        <h2>Pros and Cons</h2>
+        <p>
+          <strong><u>Advantage:</u></strong> <br>
+          Facebook the most used social networking service by world wide, users may join common interests user groups , organized by work place , school or college , can add friends and find old friends.
+        </p>
+        <p>
+          <strong><u>Disadvantage:</u></strong> <br>
+          But also it makes some people separated from the real world like who's lives in the bubble and wasting a lot of time ..
+          </p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Conclusion">
+      <div class="landing__container">
+        <h2>Conclusion</h2>
+        <p>Facebook has implemented the advertising business model more effectively than anyother company in history with the possible exception of Google. It has done this be cultivating amassive user base and developing a powerful, proprietary advertising platform.</p>
+
+        <p>The companyprovides a free, social media outlet that is addictive in a literal sense – one that user’s feel.</p>
+        <p>At the end, 
+           the Internet make the world like a small village and help in all life scopes .</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <!-- Linking the JavaScript file to the HTML -->
+  <script src="js/app.js"></script>
+</body>
+</html>
