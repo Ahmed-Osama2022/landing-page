@@ -13,12 +13,10 @@
  * 
 */
 
+
 /**
- * Comments should be present at the beginning of each procedure and class.
- * Great to have comments before crucial code sections within the procedure.
-*/
-
-
+ * Define global variables
+ */
 // The <ul> list 
 const nav = document.getElementById('navbar__list'); 
 const allSection = document.querySelectorAll('section');
@@ -68,28 +66,6 @@ allSection.forEach((section) => {
 nav.appendChild(fragment);
 
 
-/**
- * Now making the header invisible when scrolling,
- * 
- * 
- */
-
-window.addEventListener('scroll', function() {
-    // let's detect the navigation bar:
-    const navBar = document.querySelector('nav');
-    // console.log(navBar);
-    const pageTop = document.documentElement.scrollTop;
-    // console.log(pageTop);
-    if (
-        pageTop <= 200
-    ) {
-    navBar.style.display = "";
-    } else {
-        navBar.style.display = "none";
-    }
-})
-
-
 
 /**
  * Now let's highlights section in viewport upon scrolling:
@@ -122,6 +98,22 @@ window.addEventListener('scroll', function() {
         }
     })
 })
+
+// const navItems = document.getElementsByClassName('menu_link');
+
+// window.addEventListener('click', function() {
+//     nav.forEach()((sec) => {
+//         if (true) {
+//             sec.classList.add('my-active-link');
+//         } else {
+//             sec.classList.remove('my-active-link');
+//         }
+//     })
+// })
+
+
+
+
 /**
  * The End of the "Section Active State".
  * the End of helper functions.
